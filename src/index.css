@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./images/andre-benz-e4xOmzd8vzg-unsplash.jpg);
+  background-size: cover;
+}
+
+.cal-body{
+  width: 80%;
+  border-radius: 2em;
+  margin-top: 2em;
+  background-color: rgba(217, 236, 236, 0.445);
+  overflow: hidden;
+  position: relative;
+}
+
+.picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 75%;
+  height: 3em;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.picker input{
+  width: 30%;
+}
+
+.button{
+  margin-left: 1em;
+  border: none;
+  cursor: pointer;
+  padding: .5em 1em;
+  border-radius: .5em;
+  background-color: rgb(40, 87, 131);
+  color: white;
+}
+
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  width: 200px;
+}
+
+.modal-bg{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(228, 233, 238, 0.733);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container{
+  width: 350px;
+  height: 300px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.modal-container .modal-header{
+  margin-top: -77px;
+  background-color: rgb(96, 104, 79);
+  color: white;
+}
+
+.modal-container .modal-header .icon{
+  margin-right: -70px;
+}
+
+.modal-container .modal-body{
+  margin-right: -15px;
+}
+
+.modal-container .modal-header,
+.modal-container .modal-body
+{
+  width: inherit;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modal-container .icon{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 1.6em;
+  border-radius: .5em;
+  font-size: 24px;
+}
